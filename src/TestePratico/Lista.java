@@ -69,9 +69,16 @@ public class Lista {
         listaFuncioario.add(j);
     }
 
-    public void removeFuncionario(int index){
-        listaPessoas.remove(index);
-        listaFuncioario.remove(index);
+    public void removeFuncionario(String funcionario){
+        for (int i = 0; i < listaPessoas.size(); i++) {
+
+            String nome = listaPessoas.get(i).getNome();
+
+            if (nome == funcionario){
+                listaPessoas.remove(i);
+        listaFuncioario.remove(i);
+            } 
+        }
     }
 
     public void imprimiPessoas(String titulo){

@@ -12,7 +12,7 @@ public class Principal {
         lista.inseriPessoas();
         lista.inseriFuncionario();
         lista.imprimiPessoas("Lista com todos os funcionários: ");
-        lista.removeFuncionario(1);
+        lista.removeFuncionario("João");
         lista.imprimiPessoas("Lista após a remoção de um funcionário: ");
         lista.aumentaSalario(0.1);
         lista.imprimiPessoas("Lista após reajuste de salário: ");
